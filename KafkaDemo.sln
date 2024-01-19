@@ -4,14 +4,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{A76AE11D-B2C8-4439-B98B-AACCF2CF567F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		CHANGELOG.md = CHANGELOG.md
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2A8CB950-B432-4D33-85A9-341A9B2BE138}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C138ED51-483A-45AE-9462-A4A8FDA1EC5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerApp", "src\ProducerApp\ProducerApp.csproj", "{E348EA7F-5761-4C6C-9202-24D3A0A34924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerApp", "src\ConsumerApp\ConsumerApp.csproj", "{1734329D-FD1D-42A8-95CB-69E12E8479B3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E348EA7F-5761-4C6C-9202-24D3A0A34924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E348EA7F-5761-4C6C-9202-24D3A0A34924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E348EA7F-5761-4C6C-9202-24D3A0A34924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E348EA7F-5761-4C6C-9202-24D3A0A34924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1734329D-FD1D-42A8-95CB-69E12E8479B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1734329D-FD1D-42A8-95CB-69E12E8479B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1734329D-FD1D-42A8-95CB-69E12E8479B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1734329D-FD1D-42A8-95CB-69E12E8479B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E348EA7F-5761-4C6C-9202-24D3A0A34924} = {2A8CB950-B432-4D33-85A9-341A9B2BE138}
+		{1734329D-FD1D-42A8-95CB-69E12E8479B3} = {2A8CB950-B432-4D33-85A9-341A9B2BE138}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D85D4597-687C-4BD3-9BF3-FBE5241241A5}

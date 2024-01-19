@@ -2,6 +2,7 @@
 
 Simple demo with Kafka
 
+- [Getting Started with Apache Kafka and .NET](https://developer.confluent.io/get-started/dotnet/)
 
 ## Setup
 
@@ -49,3 +50,9 @@ confluent local kafka stop
 
 ![Offset Explorer](sample01.png)
 
+
+### Demo
+
+#### Run solution
+
+![demo](sample02.png)
